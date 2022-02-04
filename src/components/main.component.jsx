@@ -12,9 +12,9 @@ const Main = () => {
                     using Boxbay</h1>
                 <div className={"ml-auto absolute right-0 top-72 right-2"}>
                     <Image src="/images/hero.png" alt="hero"
-                           width={500}
-                           height={500}
-                           objectFit="cover "/>
+                           width={600}
+                           height={600}
+                           objectFit="contain "/>
                 </div>
 
             </div>

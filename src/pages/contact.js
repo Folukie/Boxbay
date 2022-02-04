@@ -14,11 +14,11 @@ export default function Contact() {
             </Head>
             <Header/>
             <div
-                className={"text-secondary text-base bg-primary h-screen grid grid-cols-1 content-between justify-between pt-16"}>
+                className={"text-secondary text-base bg-primary h-screen grid grid-cols-1 gap-y-28 pt-16"}>
                 <div>
                     <h1 className={"py-16 font-medium text-lg text-center"}>Get In Touch</h1>
 
-                    <div className={"flex flex-wrap text-center gap-x-4 gap-y-16 w-1/2 mx-auto"}>
+                    <div className={"flex flex-wrap text-center gap-x-4 gap-y-20 w-1/2 mx-auto"}>
                         {
                             contactDetails.map((detail) => (
                                 <div key={detail.id}
@@ -34,7 +34,7 @@ export default function Contact() {
                         }
                     </div>
                 </div>
-                <footer className={"text-center pb-20 "}>
+                <footer className={"text-center "}>
                     <p className={"opacity-50 font-med"}>&copy; 2022, Boxbay All rights reserved.</p>
                 </footer>
             </div>

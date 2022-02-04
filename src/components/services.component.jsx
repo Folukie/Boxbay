@@ -6,7 +6,7 @@ import Image from "next/image";
 const Services = () => {
 
     return (
-        <div className={"mt-64 px-12 text-center"}>
+        <div className={"mt-80 px-12 text-center"}>
             <h1 className={"text-lg font-medium pt-8 pb-20"}>Our Services</h1>
             <div className={"flex justify-between text-black gap-10"}>
                 {service.map((service_data) => (
