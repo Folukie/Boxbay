@@ -10,10 +10,12 @@ module.exports = {
                 sm: "288px",
                 md: "400px",
                 xl: "600px",
+                mobilelg: "750px",
 
             },
             width: {
                 sm: "367px",
+                mobilesm: "231px",
             },
             colors: {
                 transparent: 'transparent',
@@ -32,6 +34,8 @@ module.exports = {
                 min: ["30px", "31px"],
                 lg: ["48px", "52px"],
                 xl: ["72px", "80px"],
+                mobilebase: ["20px", "23px"],
+                mobilelg: ["36px", "42px"],
             },
         },
 

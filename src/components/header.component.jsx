@@ -6,7 +6,7 @@ import Image from "next/image";
 const Header = () => {
 
     return (
-        <div className="bg-primary px-14 py-6 sticky top-0 w-full z-20">
+        <div className="bg-primary px-14 py-6 sticky top-0 w-full z-20 sm:px-4">
             <div className="flex justify-between gap-8">
 
                 <Link href={"/"} passHref>
