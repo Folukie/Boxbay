@@ -12,6 +12,9 @@ module.exports = {
                 xl: "600px",
 
             },
+            width: {
+                sm: "367px",
+            },
             colors: {
                 transparent: 'transparent',
                 current: 'currentColor',
