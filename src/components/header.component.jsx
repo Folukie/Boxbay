@@ -17,7 +17,7 @@ const Header = () => {
 
                     {[
                         {title: "About", link: "/"},
-                        {title: "Contact", link: "/#contact"}].map((item, idx) => (
+                        {title: "Contact", link: "/contact"}].map((item, idx) => (
                         <a href={item.link} className="text-white text-med" key={idx}>
                             {item.title}
                         </a>

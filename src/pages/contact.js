@@ -6,7 +6,7 @@ import Image from "next/image"
 
 export default function Contact() {
     return (
-        <div className="text-secondary text-base bg-body-bg">
+        <div className="text-secondary text-base bg-primary">
             <Head>
                 <title>Contact</title>
 
@@ -15,7 +15,7 @@ export default function Contact() {
             <h1>Get In Touch</h1>
 
             <div>
-                <Image src={"phone.svg"} alt={"phone"} width={50} height={50}/>
+                <Image src={"/images/phone.svg"} alt={"phone"} width={50} height={50}/>
                 <h5>+234 808 123 4567</h5>
             </div>
             <Footer/>
