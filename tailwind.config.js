@@ -24,6 +24,7 @@ module.exports = {
                 black: '#000',
                 primary: '#14279B',
                 secondary: '#F2F5FE',
+                hovered: '#5C7AEA',
 
             },
             fontSize: {
@@ -47,6 +48,8 @@ module.exports = {
         },
         boxShadow: {
             sm: "0px 8px 4px rgba(0, 0, 0, 0.08);",
+            md: "3px 11px 7px rgba(0, 0, 0, 0.08);",
+
         },
     },
     plugins: [],

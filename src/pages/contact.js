@@ -22,7 +22,7 @@ export default function Contact() {
                         {
                             contactDetails.map((detail) => (
                                 <div key={detail.id}
-                                     className={"border flex py-7 px-7 rounded-lg justify-between w-sm mx-auto items-center align-baseline cursor-pointer sm:w-full"}>
+                                     className={"border flex py-7 px-7 rounded-lg justify-between w-sm mx-auto items-center align-baseline cursor-pointer sm:w-full hover:shadow-md "}>
                                     <div className={"w-12 sm:w-5"}>
                                         <Image src={detail.icon} alt={detail.content} width={30} height={30}/>
 

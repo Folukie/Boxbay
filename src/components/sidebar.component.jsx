@@ -22,7 +22,7 @@ const Sidebar = ({close, isOpen}) => {
 
                 </button>
             </div>
-            <div className="flex flex-col gap-y-8 py-24">
+            <div className="flex flex-col gap-y-8 py-14">
                 {
                     [
                         {title: "About", link: "/"},
@@ -30,7 +30,7 @@ const Sidebar = ({close, isOpen}) => {
 
                     ].map((item, idx) => (
                         <a
-                            className="text-white font-medium text-med"
+                            className="text-white font-medium text-med hover:opacity-80"
                             key={idx}
                             href={item.link}
                             onClick={close}
