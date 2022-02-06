@@ -5,16 +5,15 @@ import Link from "next/link"
 const Sidebar = ({close, isOpen}) => {
     return (
         <aside
-            className={`bg-secondary ${
-                !isOpen ? "translate-x-full" : ""
+            className={`bg-primary ${
+                !isOpen ? "translate-y-full" : ""
             }`}
         >
             <div className="flex justify-between pb-10 pt-2">
-                <div className="flex gap-6">
-                    <Image alt="icon" src="/images/white-icon.png" className="" width={200} height={200}/>
-
-
-                </div>
+                <Link href={"/"} passHref>
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img alt="icon" src="/images/white-icon.png" className="object-contain h-8"/>
+                </Link>
                 <button onClick={close}>
                     <svg width="19" height="21" viewBox="0 0 19 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -28,18 +27,18 @@ const Sidebar = ({close, isOpen}) => {
                 <div className="flex flex-col gap-4">
                     {
                         [
-                            {label: "About", link: "/"},
-                            // {label: "Collection", link: "/"},
+                            {title: "About", link: "/"},
+                            {title: "Contact", link: "/contact"}
 
                         ].map((item, idx) => (
                             <Link
-                                className=""
+                                className="text-white"
                                 key={idx}
                                 href={item.link}
                                 onClick={close}
 
                             >
-                                {item.label}
+                                {item.title}
                             </Link>
                         ))}
                 </div>
