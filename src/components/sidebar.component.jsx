@@ -1,12 +1,11 @@
 import React from "react";
-import Image from "next/image";
 import Link from "next/link"
 
 const Sidebar = ({close, isOpen}) => {
     return (
         <aside
-            className={`bg-primary ${
-                !isOpen ? "translate-y-full" : ""
+            className={`bg-primary sidebar  p-4 max-w-full w-full z-50 fixed top-0 left-0 hidden sm:block transition-all duration-300 transform ${
+                !isOpen ? "-translate-y-full" : ""
             }`}
         >
             <div className="flex justify-between pb-10 pt-2">
@@ -23,26 +22,23 @@ const Sidebar = ({close, isOpen}) => {
 
                 </button>
             </div>
-            <div className="flex flex-col justify-between h-full">
-                <div className="flex flex-col gap-4">
-                    {
-                        [
-                            {title: "About", link: "/"},
-                            {title: "Contact", link: "/contact"}
+            <div className="flex flex-col gap-y-8 py-24">
+                {
+                    [
+                        {title: "About", link: "/"},
+                        {title: "Contact", link: "/contact"}
 
-                        ].map((item, idx) => (
-                            <Link
-                                className="text-white"
-                                key={idx}
-                                href={item.link}
-                                onClick={close}
+                    ].map((item, idx) => (
+                        <a
+                            className="text-white font-medium text-med"
+                            key={idx}
+                            href={item.link}
+                            onClick={close}
 
-                            >
-                                {item.title}
-                            </Link>
-                        ))}
-                </div>
-
+                        >
+                            {item.title}
+                        </a>
+                    ))}
             </div>
         </aside>
     );
