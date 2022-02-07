@@ -14,7 +14,8 @@ const Services = () => {
                          className={"bg-secondary pt-16 pb-10 px-10 rounded-2xl w-full relative group hover:bg-hovered cursor-pointer transition"}>
                         <div
                             className={"absolute -top-7 left-36 bg-white py-4 px-6 shadow-sm rounded-tl-2xl border-white rounded-br-2xl sm:left-32 group-hover:border-hovered border"}>
-                            <Image src={service_data.icon} width={30} height={30} objectFit={"contain"}/>
+                            <Image src={service_data.icon} width={30} height={30} objectFit={"contain"}
+                                   alt={sevice_data.title}/>
                         </div>
                         <h2 className={"text-med font-bold pt-10 sm:text-mobilebase group-hover:text-white"}>{service_data.title}</h2>
                         <h6 className={"text-base pt-8 group-hover:text-white"}>{service_data.content}</h6>
